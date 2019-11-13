@@ -12,6 +12,7 @@
     <script src="/static/js/auth.js"></script>
     <script src="/static/js/video.js"></script>
     <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+    <script src="/static/js/filetransfer.js"></script>
   </head>
   <body>
     <div class="container">
@@ -34,7 +35,30 @@
         <div class="col"></div>
       </div>
 
-      <div id="remotes" class="row">          
+      <div id="remotes" class="row">
+                  
+        <div >
+          <form id="fileInfo">
+            <input type="file" id="fileInput" name="files"/>
+          </form>
+          <button disabled id="sendFile">Send</button>
+          <button disabled id="abortButton">Abort</button>
+        </div>
+  
+        <div class="progress">
+          <div class="label">Send progress: </div>
+          <progress id="sendProgress" max="0" value="0"></progress>
+        </div>
+  
+        <div class="progress">
+          <div class="label">Receive progress: </div>
+          <progress id="receiveProgress" max="0" value="0"></progress>
+        </div>
+  
+        <div id="bitrate"></div>
+        <a id="download"></a>
+        <span id="status"></span>
+
         <div class="col-md-6">
           <div class="videoContainer">
             <video id="selfVideo" oncontextmenu="return false;"></video>
