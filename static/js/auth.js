@@ -30,6 +30,7 @@ function hasQueryString() {
 
 // Handle the user's login and what happens next.
 function handleLogin() {
+  enableVideo
   // If the user is logging in for the first time...
   // if (okta.token.hasTokensInUrl()) {
   //   okta.token.parseTokensFromUrl(
@@ -54,20 +55,20 @@ function handleLogin() {
   //       if (!hasQueryString()) {
   //         window.location = getRoomURL();
   //       }
-        return enableVideo();
-      }
+  //       return enableVideo();
+  //     }
 
-      // If we get here, the user is not logged in.
+  //     // If we get here, the user is not logged in.
 
-      // If there's a querystring in the URL, it means this person is in a
-      // "room" so we should display our passive login notice. Otherwise,
-      // we'll prompt them for login immediately.
-      if (hasQueryString()) {
-        document.getElementById("login").style.display = "block";
-        enableVideo();
-      } else {
-        showLogin();
-      }
-    });
-  }
+  //     // If there's a querystring in the URL, it means this person is in a
+  //     // "room" so we should display our passive login notice. Otherwise,
+  //     // we'll prompt them for login immediately.
+  //     if (hasQueryString()) {
+  //       document.getElementById("login").style.display = "block";
+  //       enableVideo();
+  //     } else {
+  //       showLogin();
+  //     }
+  //   });
+  // }
 }
