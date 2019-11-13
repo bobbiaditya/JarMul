@@ -14,7 +14,8 @@
     <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="background">
+
       <header>
         <h1>Video Chat & Voice</h1>
         <h2>a simple video chat app</h2>
@@ -25,7 +26,7 @@
       <div class="row">
         <div class="col"></div>
         <div class="col-md-auto align-self-center">
-           <p id="login"> <b> datang di aplikasi ini </b></p>
+           <p id="login"> <b> share link yang ada dibawah untuk berkomunikasi dengan orang lain </b></p>
           <div id="url" class="alert alert-dark" role="alert">
             <span id="roomIntro">ROOM URL</span>: <span id="roomUrl"></span>
           </div> 
@@ -34,8 +35,9 @@
       </div>
 
       <div id="remotes" class="row">
+
         <div class="content">
-            <div class="messages" id="background">
+            <div class="messages">
             </div>
             <form class="footer" onsubmit="return false;">
               <input type="text" placeholder="Your message..">
@@ -58,7 +60,9 @@
             <meter id="localVolume" class="volume" min="-45" max="-20" high="-25" low="-40"></meter>
           </div>
         </div>
+
       </div>
+
     </div>
 
 
