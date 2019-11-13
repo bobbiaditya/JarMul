@@ -9,7 +9,7 @@
 //   return possibleEmojis[randomIndex];
 // }
 
-// const emoji = randomEmoji();
+// const emoji = randomEmoji(); 
 const name = prompt("What's your name?");
 
 // Generate random chat hash if needed
@@ -149,8 +149,8 @@ function checkDataChannelState() {
 function insertMessageToDOM(options, isFromMe) {
   const template = document.querySelector('template[data-template="message"]');
   const nameEl = template.content.querySelector('.message__name');
-  if (options.emoji || options.name) {
-    nameEl.innerText = options.emoji + ' ' + options.name;
+  if (options.name) {
+    nameEl.innerText = options.name;
   }
   template.content.querySelector('.message__bubble').innerText = options.content;
   const clone = document.importNode(template.content, true);
@@ -177,7 +177,6 @@ form.addEventListener('submit', () => {
   const data = {
     name,
     content: value,
-    emoji,
   };
 
   dataChannel.send(JSON.stringify(data));
