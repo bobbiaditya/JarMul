@@ -40,26 +40,26 @@
                 <meter id="localVolume" class="volume" min="-45" max="-20" high="-25" low="-40"></meter>
               </div>
             </div>
-        <div class="content" style="position: fixed;">
-            <div class="messages" id="background">
-            </div>
-            <form class="footer" onsubmit="return false;">
-              <input type="text" placeholder="Your message..">
-              <button type="submit">Send</button>
-            </form>
-          </div>
-        
-          <template data-template="message">
-            <div class="message">
-              <div class="message__name"></div>
-              <div class="message__bubble"></div>
-            </div>
-          </template>
         
           <script src="/static/js/script.js"></script>
 
         
       </div>
+      <div class="content" style="position: fixed;">
+          <div class="messages" id="background">
+          </div>
+          <form class="footer" onsubmit="return false;">
+            <input type="text" placeholder="Your message..">
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      
+        <template data-template="message">
+          <div class="message">
+            <div class="message__name"></div>
+            <div class="message__bubble"></div>
+          </div>
+        </template>
     </div>
 
     <script>
