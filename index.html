@@ -11,6 +11,7 @@
     <script src="https://webrtc.github.io/adapter/adapter-4.2.2.js"></script>
     <script src="/static/js/auth.js"></script>
     <script src="/static/js/video.js"></script>
+    <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
   </head>
   <body>
     <div class="container">
@@ -34,6 +35,25 @@
       </div>
 
       <div id="remotes" class="row">
+          <div class="content">
+              <div class="messages">
+          
+              </div>
+              <form class="footer" onsubmit="return false;">
+                <input type="text" placeholder="Your message..">
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          
+            <template data-template="message">
+              <div class="message">
+                <div class="message__name"></div>
+                <div class="message__bubble"></div>
+              </div>
+            </template>
+          
+            <script src="script.js"></script>
+          
         <div class="col-md-6">
           <div class="videoContainer">
             <video id="selfVideo" oncontextmenu="return false;"></video>
@@ -42,6 +62,7 @@
         </div>
       </div>
     </div>
+    
 
     <footer>
       <p>Hacked together by <a href="https://twitter.com/rdegges">@rdegges</a>
