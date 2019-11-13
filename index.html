@@ -22,23 +22,8 @@
         <h2><a href="/">a simple video chat app</a></h2>
       </header>
 
-      <div id="okta-login-container"></div>
 
-      <div class="row">
-        <div class="col"></div>
-        <div class="col-md-auto align-self-center">
-          <p id="login"><b>NOTE</b>: You are not currently logged in. If you'd like to start your own
-            chat room please <button type="button" class="btn btn-light" onclick="document.location='/'">log in</button></p>
-          <div id="url" class="alert alert-dark" role="alert">
-            <span id="roomIntro">ROOM URL</span>: <span id="roomUrl"></span>
-          </div>
-        </div>
-        <div class="col"></div>
-      </div>
-
-      <div id="remotes" class="row">
-
-        <div>
+      <div>
           <form id="fileInfo">
             <input type="file" id="fileInput" name="files"/>
           </form>
@@ -59,6 +44,24 @@
         <div id="bitrate"></div>
         <a id="download"></a>
         <span id="status"></span>
+
+      <div id="okta-login-container"></div>
+
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-md-auto align-self-center">
+          <p id="login"><b>NOTE</b>: You are not currently logged in. If you'd like to start your own
+            chat room please <button type="button" class="btn btn-light" onclick="document.location='/'">log in</button></p>
+          <div id="url" class="alert alert-dark" role="alert">
+            <span id="roomIntro">ROOM URL</span>: <span id="roomUrl"></span>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <div id="remotes" class="row">
+
+        
 
         <div class="col-md-6">
           <div class="videoContainer">
