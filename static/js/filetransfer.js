@@ -20,8 +20,8 @@ const downloadAnchor = document.querySelector('a#download');
 const sendProgress = document.querySelector('progress#sendProgress');
 const receiveProgress = document.querySelector('progress#receiveProgress');
 const statusMessage = document.querySelector('span#status');
-sendFileButton = document.querySelector('button#sendFile');
-console.log(sendFileButton);
+const sendFileButton = document.querySelector('button#sendFile');
+console.log(sendFileButton.disabled);
 
 let receiveBuffer = [];
 let receivedSize = 0;
@@ -32,7 +32,7 @@ let timestampStart;
 let statsInterval = null;
 let bitrateMax = 0;
 
-sendFileButton.addEventListener('click', () => createConnection());
+// sendFileButton.addEventListener('click', () => createConnection());
 fileInput.addEventListener('change', handleFileInputChange, false);
 abortButton.addEventListener('click', () => {
   if (fileReader && fileReader.readyState === 1) {
