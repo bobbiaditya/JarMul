@@ -32,7 +32,6 @@ header h2 {
 
 #remotes {
   visibility: hidden;
-  width:50%;
 }
 
 #url {
@@ -90,7 +89,6 @@ header h2 {
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  float: left;
 }
 .messages {
   flex-grow: 1;
