@@ -51,7 +51,7 @@ async function handleFileInputChange() {
 }
 
 async function createConnection() {
-    console.log(sendFileButton);
+    console.log("asdasdasd");
   abortButton.disabled = false;
   sendFileButton.disabled = true;
   localConnection = new RTCPeerConnection();
