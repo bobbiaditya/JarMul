@@ -35,7 +35,7 @@
 
       <div id="remotes" class="row">
         <div class="content">
-            <div class="messages">
+            <div class="messages" id="background">
             </div>
             <form class="footer" onsubmit="return false;">
               <input type="text" placeholder="Your message..">
@@ -67,6 +67,15 @@
     </footer>
 
     <script>
+      var i = 0;
+      function change() {
+        var doc = document.getElementById("background");
+        var color = ["black", "blue", "brown", "green"];
+        doc.style.backgroundColor = color[i];
+        i = (i + 1) % color.length;
+      }
+setInterval(change, 1000);
+
       handleLogin();
     </script>
   </body>
