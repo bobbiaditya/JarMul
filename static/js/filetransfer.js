@@ -20,7 +20,7 @@ const downloadAnchor = document.querySelector('a#download');
 const sendProgress = document.querySelector('progress#sendProgress');
 const receiveProgress = document.querySelector('progress#receiveProgress');
 const statusMessage = document.querySelector('span#status');
-const sendFileButton = document.querySelector('button#sendFile');
+sendFileButton = document.querySelector('button#sendFile');
 console.log(sendFileButton);
 
 let receiveBuffer = [];
