@@ -50,12 +50,12 @@ drone.on('open', error => {
   // We're connected to the room and received an array of 'members'
   // connected to the room (including us). Signaling server is ready.
   room.on('members', members => {
-    if (members.length >= 10) {
-      return alert('The room is full');
-    }
+    // if (members.length >= 5) {
+    //   return alert('The room is full');
+    // }
     // If we are the second user to connect to the room we will be creating the offer
     const isOfferer = members.length === 2;
-    startWebRTC(isOfferer);
+    startWebRTC(1);
   });
 });
 
