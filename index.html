@@ -16,8 +16,8 @@
   <body>
     <div class="container">
       <header>
-        <h1><a href="/">vchatttrtttttt suuuuu</a></h1>
-        <h2><a href="/">a simple video chat app</a></h2>
+        <h1>Video Chat & Voice</h1>
+        <h2>a simple video chat app</h2>
       </header>
 
       <div id="okta-login-container"></div>
@@ -25,7 +25,7 @@
       <div class="row">
         <div class="col"></div>
         <div class="col-md-auto align-self-center">
-           <p id="login"> <b> datang di aplikasi ini </b></p>
+           <p id="login"> <b>share link untuk berkomunikasi dengan yang lain</b></p>
           <div id="url" class="alert alert-dark" role="alert">
             <span id="roomIntro">ROOM URL</span>: <span id="roomUrl"></span>
           </div> 
@@ -34,6 +34,12 @@
       </div>
 
       <div id="remotes" class="row">
+          <div class="col-md-6">
+              <div class="videoContainer">
+                <video id="selfVideo" oncontextmenu="return false;"></video>
+                <meter id="localVolume" class="volume" min="-45" max="-20" high="-25" low="-40"></meter>
+              </div>
+            </div>
         <div class="content">
             <div class="messages" id="background">
             </div>
@@ -52,12 +58,7 @@
         
           <script src="/static/js/script.js"></script>
 
-        <div class="col-md-6">
-          <div class="videoContainer">
-            <video id="selfVideo" oncontextmenu="return false;"></video>
-            <meter id="localVolume" class="volume" min="-45" max="-20" high="-25" low="-40"></meter>
-          </div>
-        </div>
+        
       </div>
     </div>
 
