@@ -30,7 +30,7 @@ function hasQueryString() {
 
 // Handle the user's login and what happens next.
 function handleLogin() {
-  enableVideo
+  enableVideo();
   // If the user is logging in for the first time...
   // if (okta.token.hasTokensInUrl()) {
   //   okta.token.parseTokensFromUrl(
