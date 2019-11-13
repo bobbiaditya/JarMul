@@ -14,7 +14,7 @@
     <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
   </head>
   <body>
-    <div class="container" id="background">
+    <div class="container">
 
       <header>
         <h1>Video Chat & Voice</h1>
@@ -34,25 +34,25 @@
         <div class="col"></div>
       </div>
 
-      <div id="remotes" class="row">
-
-        <div class="content">
-            <div class="messages">
-            </div>
-            <form class="footer" onsubmit="return false;">
-              <input type="text" placeholder="Your message..">
-              <button type="submit">Send</button>
-            </form>
+      <div class="content">
+          <div class="messages">
           </div>
-        
-          <template data-template="message">
-            <div class="message" style="color: aliceblue;">
-              <div class="message__name"></div>
-              <div class="message__bubble"></div>
-            </div>
-          </template>
-        
-          <script src="/static/js/script.js"></script>
+          <form class="footer" onsubmit="return false;">
+            <input type="text" placeholder="Your message..">
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      
+        <template data-template="message">
+          <div class="message" style="color: aliceblue;">
+            <div class="message__name"></div>
+            <div class="message__bubble"></div>
+          </div>
+        </template>
+      
+        <script src="/static/js/script.js"></script>
+
+      <div id="remotes" class="row">
 
         <div class="col-md-6">
           <div class="videoContainer">
