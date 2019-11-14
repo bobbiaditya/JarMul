@@ -16,7 +16,7 @@
     <script src="/static/js/video.js"></script>
     <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
   </head>
-  <body id="background">
+  <body background="powderblue">
     <div class="container">
       <div style="padding-left: 500px; width: 100%;">
         <header>
@@ -74,19 +74,5 @@
 
     </div>
 
-
-
-    <script>
-      var i = 0;
-      function change() {
-        var doc = document.getElementById("background");
-        var color = ["powderblue", "teal", "orange", "maroon"];
-        doc.style.backgroundColor = color[i];
-        i = (i + 1) % color.length;
-      }
-setInterval(change, 1000);
-
-      handleLogin();
-    </script>
   </body>
 </html>
