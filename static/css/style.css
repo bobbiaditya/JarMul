@@ -94,24 +94,19 @@ header h2 {
   flex-grow: 1;
   padding: 20px 30px;
   overflow: auto;
-  color : white;
 }
 .message {
   display: flex;
   flex-direction: column;
-  color : white;
 }
 .message--mine {
   align-items: flex-end;
-  color : white;
 }
 .message--theirs {
   align-items: flex-start;
-  color : white;
 }
 .message__name {
   padding: 10px 0;
-  color : white;
 }
 .message__bubble {
   padding: 20px;
@@ -123,7 +118,6 @@ header h2 {
 }
 .message--mine .message__bubble {
   background: rgba(245, 12, 43, 0.952);
-  color : white;
 }
 .footer {
   line-height: 76px;
