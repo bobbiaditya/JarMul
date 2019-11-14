@@ -81,7 +81,7 @@ header h2 {
   margin-bottom: 1em;
 }
 .content {
-  box-shadow: rgba(245, 12, 43, 0.952) 0px 2px 2px, rgba(245, 12, 43, 0.952) 0px 4px 4px, rgba(245, 12, 43, 0.952) 0px 8px 8px, rgba(245, 12, 43, 0.952) 0px 16px 16px, rgba(245, 12, 43, 0.952) 0px 32px 32px, rgba(245, 12, 43, 0.952) 0px 64px 64px;
+  box-shadow: rgba(156, 172, 172, 0.2) 0px 2px 2px, rgba(156, 172, 172, 0.2) 0px 4px 4px, rgba(156, 172, 172, 0.2) 0px 8px 8px, rgba(156, 172, 172, 0.2) 0px 16px 16px, rgba(156, 172, 172, 0.2) 0px 32px 32px, rgba(156, 172, 172, 0.2) 0px 64px 64px;
   border-radius: 3px;
   height: 100%;
   max-height: 100%;
@@ -94,19 +94,24 @@ header h2 {
   flex-grow: 1;
   padding: 20px 30px;
   overflow: auto;
+  color : white;
 }
 .message {
   display: flex;
   flex-direction: column;
+  color : white;
 }
 .message--mine {
   align-items: flex-end;
+  color : white;
 }
 .message--theirs {
   align-items: flex-start;
+  color : white;
 }
 .message__name {
   padding: 10px 0;
+  color : white;
 }
 .message__bubble {
   padding: 20px;
@@ -118,6 +123,7 @@ header h2 {
 }
 .message--mine .message__bubble {
   background: rgba(245, 12, 43, 0.952);
+  color : white;
 }
 .footer {
   line-height: 76px;
