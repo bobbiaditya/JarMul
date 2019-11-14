@@ -114,11 +114,11 @@ header h2 {
   border-radius: 3px;
 }
 .message--theirs .message__bubble {
-  background: #6363bf;
+  background: lightseagreen;
   color: white;
 }
 .message--mine .message__bubble {
-  background: rgba(245, 12, 43, 0.952);
+  background: lightcoral;
   color: white;
 }
 .footer {
